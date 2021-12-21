@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FoodDetailFragment">
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:minHeight="200dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/txtFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFood"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Food Name" />
+
+    <TextView
+        android:id="@+id/txtFoodCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFoodName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Food Calorie" />
+
+    <TextView
+        android:id="@+id/txtFoodCarbohydrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFoodCalorie"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Food Carbohydrate" />
+
+    <TextView
+        android:id="@+id/txtFoodProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFoodCarbohydrate"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Food Protein" />
+
+    <TextView
+        android:id="@+id/txtFoodOil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFoodProtein"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Food Oil" />
+</RelativeLayout>

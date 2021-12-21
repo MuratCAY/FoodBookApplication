@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "757c3ef1c74a84b33ef6f0054f1f6e16",
+    "entities": [
+      {
+        "tableName": "Food",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`isim` TEXT NOT NULL, `gorsel` TEXT NOT NULL, `kalori` TEXT NOT NULL, `karbonhidrat` TEXT NOT NULL, `protein` TEXT NOT NULL, `yag` TEXT NOT NULL, `uuid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "isim",
+            "columnName": "isim",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gorsel",
+            "columnName": "gorsel",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kalori",
+            "columnName": "kalori",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "karbonhidrat",
+            "columnName": "karbonhidrat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "protein",
+            "columnName": "protein",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "yag",
+            "columnName": "yag",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uuid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '757c3ef1c74a84b33ef6f0054f1f6e16')"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FoodBookApplication</string>
+    <string name="todo">TODO</string>
+    <string name="hata_tekrar_deneyiniz">Hata! Tekrar Deneyiniz!</string>
+</resources>
